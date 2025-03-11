@@ -1,0 +1,116 @@
+@font-face {
+    font-family: "Comfortaa";
+    src: local("Comfortaa-Regular"), local("Comfortaa Regular"),
+        url("../fonts/Comfortaa-Regular.woff") format("woff"),
+        url("../fonts/Comfortaa-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "Helvetica Neue Cyr";
+    src: local("Helvetica-Neue-Cyr-Light"),
+        local("HelveticaNeueCyr-Light"),
+        local("Helvetica Neue Cyr Light"),
+        local("HelveticaNeue Cyr Light"),
+        local("HelveticaNeue-Cyr-Light"),
+        local("HelveticaNeueCyr Light"),
+        url("../fonts/HelveticaNeueCyr-Light.woff") format("woff"),
+        url("../fonts/HelveticaNeueCyr-Light.woff2") format("woff2");
+    font-weight: 300;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: "Helvetica Neue Cyr";
+    src: local("Helvetica-Neue-Cyr-Medium"),
+        local("HelveticaNeueCyr-Medium"),
+        local("Helvetica Neue Cyr Medium"),
+        local("HelveticaNeue Cyr Medium"),
+        local("HelveticaNeue-Cyr-Medium"),
+        local("HelveticaNeueCyr Medium"),
+        url("../fonts/HelveticaNeueCyr-Medium.woff") format("woff"),
+        url("../fonts/HelveticaNeueCyr-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Helvetica Neue Cyr";
+    src: local("Helvetica-Neue-Cyr-Roman"),
+        local("HelveticaNeueCyr-Roman"),
+        local("Helvetica Neue Cyr Roman"),
+        local("HelveticaNeue Cyr Roman"),
+        local("HelveticaNeue-Cyr-Roman"),
+        local("HelveticaNeueCyr Roman"),
+        url("../fonts/HelveticaNeueCyr-Roman.woff") format("woff"),
+        url("../fonts/HelveticaNeueCyr-Roman.woff2") format("woff2");
+    font-weight: 400;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow-x: hidden;
+    min-width: 320px;
+    min-height: 100vh;
+    font-family: "Helvetica Neue Cyr", "Arial", sans-serif;
+    font-weight: 300;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: 100px 125px 180px 125px;
+    max-width: 1440px;
+}
+
+.title_hidden {
+    position: fixed;
+    transform: scale(0);
+}
+
+.title {
+    margin-bottom: 45px;
+    font-size: 50px;
+    font-family: Comfortaa, "Arial", sans-serif;
+    font-weight: 400;
+}
+
+.text {
+    width: 650px;
+    font-size: 20px;
+}
+
+.text:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.subtitle {
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.subtitle::before {
+    padding-right: 30px;
+    content: counter(inc);
+    counter-increment: inc;
+    font-size: 50px;
+    color: #ff8a00;
+}
+
+.section {
+    margin-bottom: 200px;
+}
