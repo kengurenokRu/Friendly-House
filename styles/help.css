@@ -1,0 +1,33 @@
+.help__text_padding {
+    padding-left: 60px;
+}
+
+.help__text_medium {
+    font-weight: 500;
+}
+
+.help__list {
+    list-style-type: none;
+    counter-reset: inc;
+}
+
+.help__item {
+    margin-bottom: 200px;
+}
+
+.help__item:last-of-type {
+    margin-bottom: 0;
+}
+
+.help__title_orange {
+    margin-bottom: 125px;
+    text-align: center;
+}
+
+.help__title_orange {
+    color: #ff8a00;
+}
+
+.help-us__button {
+    border: none;
+}
