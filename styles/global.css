@@ -72,8 +72,12 @@ body {
 
 .wrapper {
     margin: 0 auto;
-    padding: 100px 125px 180px 125px;
+    padding: 100px 0 180px 0;
     max-width: 1440px;
+}
+
+.container {
+    padding: 0 120px;
 }
 
 .title_hidden {
@@ -112,5 +116,35 @@ body {
 }
 
 .section {
-    margin-bottom: 200px;
+    margin-bottom: 100px;
+}
+
+@media (max-width: 1024px) {
+    .title {
+        margin-bottom: 40px;
+        font-size: 44px;
+    }    
+    .container {
+        padding: 0 72px;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        margin-bottom: 30px;
+        font-size: 30px;
+    }
+    .container {
+        padding: 0 34px;
+    }
+}
+
+@media (max-width: 320px) {
+    .title {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    .container {
+        padding: 0 25px;
+    }
 }

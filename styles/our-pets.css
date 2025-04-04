@@ -1,0 +1,21 @@
+.our-pets__grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 48px;
+  column-gap: 20px;
+  justify-content: stretch;
+}
+
+.our-pets__sub-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(1, 1fr);
+  column-gap: 20px;
+  justify-content: stretch;
+}
+
+.our-pets__pet:nth-child(3)
+{
+  grid-row: 1/2;
+}
