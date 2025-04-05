@@ -189,7 +189,7 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 940px) {
   .our-project__article {
     gap: 3px 10px
   }
@@ -252,7 +252,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 650px) {
 
   .our-project__grid {
     display: grid;
@@ -292,6 +292,7 @@
   .our-project__article-big {
     width: 270px;
     height: 320px;
+    margin: 0 auto;
   }
 
   .our-project__title-card_position {
@@ -314,8 +315,14 @@
   }
 
   .our-project__other-project {
-    grid-template-columns: repeat(3, 60px);
+    grid-template-columns: repeat(4, 60px);
     grid-template-rows: repeat(1, 52px);
+    column-gap: 10px;
     grid-auto-rows: 0;
+  }
+
+  .our-project__article-mini{
+    max-width: 270px;
+    margin: 0 auto;
   }
 }
