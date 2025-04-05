@@ -129,7 +129,7 @@
   text-align: right;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .our-project__article {
     gap: 7px 20px
   }
