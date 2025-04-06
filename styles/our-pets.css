@@ -9,8 +9,8 @@
     "foto3 foto3 foto3 foto4 foto4 foto4 foto5 foto5 foto6 foto6 foto6 foto6";
 }
 
-.our-pets__grid-item {
-  height: auto;
+.our-pets__picture-block {
+  height: 100%;
 }
 
 .our-pets__grid-item:nth-child(1) {
@@ -35,6 +35,10 @@
 
 .our-pets__grid-item:nth-child(6) {
   grid-area: foto6;
+}
+
+.our-pets__grid-item {
+  height: 100%;
 }
 
 .our-pets__pet-img {
