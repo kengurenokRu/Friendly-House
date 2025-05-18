@@ -1,12 +1,13 @@
-.help-us {
+.help-us__form {
     padding: 50px 100px;
     border-radius: 20px;
-    background-color: #f2f0f1;
-    max-height: 592px;
+    max-height: 562px;
     max-width: 780px;
     text-align: center;
     margin: 0 auto;
+    background-color: var(--bg-grey-color, #f2f0f1);
 }
+
 
 .help-us__title {
     font-size: 30px;
@@ -15,28 +16,33 @@
 }
 
 .help-us__text {
-    margin-bottom: 0;
+    font-size: 20px;
     line-height: 30px;
 }
 
-.help-us__text:last-of-type {
+
+.help-us__text-block {
+    margin: 0 auto;
+    text-align: center;
     margin-bottom: 20px;
 }
 
 .help-us__text_orange,
 .help-us__title_orange {
-    color: #ff8a00;
+    color: var(--text-color-orange, #ff8a00);
 }
 
 .help-us__contacts {
     font-style: normal;
-    margin-bottom: 30px;
     line-height: 24px;
+    display: flex;
+    gap: 45px;
+    justify-content: center;
+    margin-bottom: 60px;
 }
 
 .help-us__contact {
     font-weight: 550;
-    margin-bottom: 10px;
 }
 
 .help-us__contact:last-of-type {
@@ -44,8 +50,9 @@
 }
 
 .help-us__input-box {
-    max-width: 280px;
-    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
 }
 
 .help-us__label {
@@ -54,26 +61,14 @@
 }
 
 .help-us__input {
-    width: 100%;
+    width: 280px;
     height: 40px;
-}
-
-.help-us__input-box:first-of-type {
-    margin-bottom: 20px;
+    border: none;
 }
 
 .help-us__field {
     margin-bottom: 35px;
     border: none;
-}
-
-.help-us__button {
-    font-size: 12px;
-    text-transform: uppercase;
-    background-color: #282626;
-    height: 40px;
-    width: 220px;
-    font-weight: 550;
 }
 
 .help-us_block {
@@ -106,4 +101,145 @@
     background-repeat: no-repeat;
     width: 24px;
     height: 24px;
+}
+
+.help-us__button {
+    width: 80px;
+    border: none;
+    cursor: pointer;
+}
+
+.help-us__picture-button {
+    width: 73px;
+}
+
+.help-us__text-button {
+    color: var(--text-color-orange, #ff8a00);
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 550;
+    text-transform: uppercase;
+}
+
+.help-us__button-block {
+    width: 494px;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.help-us__text_margin {
+    margin-bottom: 20px;
+}
+
+
+
+@media (max-width: 1200px) {
+    .help-us__title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .help-us__form {
+        padding: 50px 93px;
+        max-height: 486px;
+        max-width: 680px;
+    }
+
+    .help-us__text {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .help-us__button-block {
+        width: 420px;
+    }
+
+    .help-us__input {
+        width: 200px;
+        height: 35px;
+    }
+
+    .help-us__text_inline {
+        display: inline;
+        margin-bottom: 20px;
+        line-height: 20px;
+    }
+
+    .help-us__text-block {
+        max-width: 480px;
+    }
+
+    .help-us__contacts {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 940px) {
+    .help-us__title {
+        font-size: 18px;
+    }
+
+    .help-us__form {
+        padding: 40px 60px;
+        max-height: 440px;
+        max-width: 540px;
+    }
+
+    .help-us__text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .help-us__text-block {
+        max-width: 380px;
+    }
+
+    .help-us__button-block {
+        width: 100%;
+        text-align: center;
+    }
+
+    .help-us__contacts {
+        gap: 41px;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .help-us__input-box {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 680px) {
+    .help-us__title {
+        font-size: 16px;
+        margin-bottom: 14px;
+    }
+
+    .help-us__form {
+        padding: 30px 29px;
+        max-height: 513px;
+        max-width: 500px;
+    }
+
+    .help-us__contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .help-us__input-box {
+        flex-direction: column;
+        gap: 14px;
+        align-items: center;
+    }
+
+    .help-us__picture-button {
+        width: 61px;
+    }
+
+    .help-us__text-button {
+        font-size: 8px;
+        line-height: 12px;
+    }
 }
