@@ -12,6 +12,8 @@
 }
 
 .header__burger {
+    border: none;
+    background-color: transparent;
     transition-duration: 0.2s;
     transition-property: fill, stroke, border, transform;
     cursor: pointer;
